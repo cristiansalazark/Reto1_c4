@@ -1,11 +1,16 @@
-
+/**
+ * <h1>main </h1>
+ * Clase main corre el programa
+ * @since 23-11-2021
+ * @version 1.0
+ * @author Cristian David Salazar Aponte
+ *
+ */
 //modelo
 //interface
 //repositorio
 //servicio
 //controlador
-
-
 
 package Reto1_Ciclo4.Reto1;
 

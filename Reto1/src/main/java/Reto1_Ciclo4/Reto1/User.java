@@ -1,6 +1,13 @@
 
 package Reto1_Ciclo4.Reto1;
-
+/**
+ * <h1>User </h1>
+ * Clase usuario crea la tabla usuario con sus condiciones de caracteres propios de cada variable
+ * @since 23-11-2021
+ * @version 1.0
+ * @author Cristian David Salazar Aponte
+ *
+ */
 import java.io.Serializable;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -16,18 +23,21 @@ import lombok.RequiredArgsConstructor;
 
 
 
-/**
- *
- * @author USUARIO
- */
+
 @Entity
 @Data
 @RequiredArgsConstructor
 @NoArgsConstructor
 @Table(name = "user", indexes = @Index(name = "indx_email", columnList = "user_email", unique = true))
 public class User implements Serializable {
+     /**
+     * @param ID definicion de id incremental
+     */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    /**
+     * definicion de variables de la tabla user y se asignan complementos a las columnas con @colum
+     */
     private Integer id;
       @NonNull
     @Column(name = "user_email", nullable = false, length = 50)
